@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/scripts.js"></script> 
+
+    <title>Notas</title>
+  </head>
+  <body class="">
+
+    <div id="tabela">
+      <table id="tbl" border="1">
+        <tr id="titulosTabela">
+          <td>Nome</td>
+          <td>Voz</td>
+          <td>Canto</td>
+        </tr>
+        <tr>
+          <td><input type="text" id="nomeParticipante0"></td>
+          <td><input type="number" id="voz0"></td>
+          <td><input type="number" id="canto0"></td>
+          <td><button class="btnAdd" onclick='removeLinha(this)'>Remover</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="botaoAdd">
+      <button class="btnAdd" onclick="adicionaLinha('tbl')">Adicionar</button>
+      <button class="btnAdd" onclick="salvar()">Salvar</button>
+      <!-- <button class="btnAdd" onclick="showArray()">show array</button> -->
+    </div>
+
+    <div class="divResultado">
+      <table id="tabelaResultado">
+        <tr id="trTblResult">
+          <td id=" tdTblResult">Nome</td>
+          <td id=" tdTblResult">Voz</td>
+          <td id=" tdTblResult">Canto</td>
+          <td id=" tdTblResult">Soma das Notas</td>
+        </tr>
+      </table>
+    </div>          
+        
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  </body>
+</html>
